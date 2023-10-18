@@ -119,13 +119,19 @@ int main()
 	int opcao=0; // Definindo variaveis
 	int laco=1;
 	char senhadigitada[10]="a";
+	int comparacao;
 	
 	printf("### Cartio da EBAC ### \n\n ");
 	printf("Login, de administrador! \n\n Digite a senha: ");
 	scanf("%s", senhadigitada);
 	
-	if(senhadigitada[10] == "1234")
+	comparacao = strcmp(senhadigitada, "12345");
+	
+	if(comparacao == 0)
+	
 	{
+		system("cls");
+		
 		for (laco=1;laco=1;)
 		{
 
